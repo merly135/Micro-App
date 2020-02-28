@@ -8,6 +8,8 @@ function scissorsClick() {
 
     var random = Math.floor(Math.random() * 3);
     img.setAttribute("src", imgs[random]);
+    img.setAttribute("height", "200");
+    img.setAttribute("width", "200");
     document.body.appendChild(img);
 
 }
@@ -21,6 +23,8 @@ function rockClick() {
 
     var random = Math.floor(Math.random() * 3);
     img.setAttribute("src", imgs[random]);
+    img.setAttribute("height", "200");
+    img.setAttribute("width", "200");
     document.body.appendChild(img);
 
 }
@@ -35,6 +39,8 @@ function paperClick() {
 
     var random = Math.floor(Math.random() * 3);
     img.setAttribute("src", imgs[random]);
+    img.setAttribute("height", "200");
+    img.setAttribute("width", "200");
     document.body.appendChild(img);
 
 }
