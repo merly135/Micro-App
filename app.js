@@ -1,40 +1,40 @@
 var img = document.createElement("IMG");
 
-var scissorsPic = document.getElementById("scissors");
+var scissorsPic = document.getElementById("scissors").addEventListener("click", scissorsClick);
 
 function scissorsClick() {
     "use strict";
     var imgs = ["rock.jpg", "scissors.jpg", "paper.jpg"];
+
     var random = Math.floor(Math.random() * 3);
-
-
     img.setAttribute("src", imgs[random]);
     document.body.appendChild(img);
+
 }
 
-scissorsPic.addEventListener("click", scissorsClick());
 
-
-
-
-var rockPic = document.getElementById("rock");
+document.getElementById("rock").addEventListener("click", rockClick);
 
 function rockClick() {
     "use strict";
     var imgs = ["rock.jpg", "scissors.jpg", "paper.jpg"];
+
+    var random = Math.floor(Math.random() * 3);
+    img.setAttribute("src", imgs[random]);
+    document.body.appendChild(img);
+
 }
 
-rockPic.addEventListener("click", rockClick());
 
 
-
-
-
-var paperPic = document.getElementById("paper");
+document.getElementById("paper").addEventListener("click", paperClick);
 
 function paperClick() {
     "use strict";
     var imgs = ["rock.jpg", "scissors.jpg", "paper.jpg"];
-}
 
-rockPic.addEventListener("click", paperClick());
+    var random = Math.floor(Math.random() * 3);
+    img.setAttribute("src", imgs[random]);
+    document.body.appendChild(img);
+
+}
