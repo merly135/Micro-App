@@ -1,23 +1,23 @@
 body {
-    background-color: antiquewhite;
+    background-color: black;
 }
 
 h1 {
     text-align: center;
-    background-color: mediumvioletred;
+    background-color: lightgreen;
     padding: 10px;
     width: 60%;
 }
 
 img {
     padding: 15px;
-    background-color: black;
-    width: 25%;
+    background-color: powderblue;
+    width: 15%;
 
 }
 
 img:hover:not(.active) {
-    background-color: red;
+    background-color: greenyellow;
 }
 
 h2 {

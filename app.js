@@ -1,5 +1,5 @@
 var img = document.createElement("IMG");
-var text = document.createElement("h2");
+var text = document.getElementById("result");
 
 var scissorsPic = document.getElementById("scissors").addEventListener("click", scissorsClick);
 
@@ -19,7 +19,7 @@ function scissorsClick() {
     } else if (result === "paper.jpg") {
         text.textContent = "You win"
     }
-    document.body.appendChild(text)
+    document.body.h2.appendChild(text)
 }
 
 
@@ -31,7 +31,7 @@ function rockClick() {
 
     var random = Math.floor(Math.random() * 3);
     img.setAttribute("src", imgs[random]);
-    document.body.appendChild(img);
+    document.body.h2.appendChild(img);
 
 
     var result = imgs[random]
@@ -56,7 +56,7 @@ function paperClick() {
 
     var random = Math.floor(Math.random() * 3);
     img.setAttribute("src", imgs[random]);
-    document.body.appendChild(img);
+    document.body.h2.appendChild(img);
 
 
     var result = imgs[random]
