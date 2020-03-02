@@ -1,4 +1,5 @@
 var img = document.createElement("IMG");
+var text = document.createElement("h2");
 
 var scissorsPic = document.getElementById("scissors").addEventListener("click", scissorsClick);
 
@@ -8,10 +9,17 @@ function scissorsClick() {
 
     var random = Math.floor(Math.random() * 3);
     img.setAttribute("src", imgs[random]);
-    img.setAttribute("height", "200");
-    img.setAttribute("width", "200");
     document.body.appendChild(img);
 
+    var result = imgs[random];
+    if ("scissors.jpg" === result) {
+        text.textContent = "Tie. Play Again";
+    } else if (result === "rock.jpg") {
+        text.textContent = "You Lost";
+    } else if (result === "paper.jpg") {
+        text.textContent = "You win"
+    }
+    document.body.appendChild(text)
 }
 
 
@@ -23,9 +31,18 @@ function rockClick() {
 
     var random = Math.floor(Math.random() * 3);
     img.setAttribute("src", imgs[random]);
-    img.setAttribute("height", "200");
-    img.setAttribute("width", "200");
     document.body.appendChild(img);
+
+
+    var result = imgs[random]
+    if ("rock.jpg" === result) {
+        text.textContent = "Tie. Play Again";
+    } else if (result === "scissors.jpg") {
+        text.textContent = "You Lost";
+    } else if (result === "paper.jpg") {
+        text.textContent = "You win"
+    }
+    document.body.appendChild(text)
 
 }
 
@@ -39,8 +56,20 @@ function paperClick() {
 
     var random = Math.floor(Math.random() * 3);
     img.setAttribute("src", imgs[random]);
-    img.setAttribute("height", "200");
-    img.setAttribute("width", "200");
     document.body.appendChild(img);
 
+
+    var result = imgs[random]
+    if ("paper.jpg" === result) {
+        text.textContent = "Tie. Play Again";
+    } else if (result === "scissors.jpg") {
+        text.textContent = "You Lost";
+    } else if (result === "rock.jpg") {
+        text.textContent = "You win"
+    }
+    document.body.appendChild(text)
+
 }
+
+
+document.body.appendChild(text)
