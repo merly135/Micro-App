@@ -31,7 +31,7 @@ function rockClick() {
 
     var random = Math.floor(Math.random() * 3);
     img.setAttribute("src", imgs[random]);
-    document.body.h2.appendChild(img);
+    document.body.appendChild(img);
 
 
     var result = imgs[random]
@@ -42,7 +42,7 @@ function rockClick() {
     } else if (result === "paper.jpg") {
         text.textContent = "You win"
     }
-    document.body.appendChild(text)
+    document.body.h2.appendChild(text)
 
 }
 
@@ -56,7 +56,7 @@ function paperClick() {
 
     var random = Math.floor(Math.random() * 3);
     img.setAttribute("src", imgs[random]);
-    document.body.h2.appendChild(img);
+    document.body.appendChild(img);
 
 
     var result = imgs[random]
@@ -67,7 +67,7 @@ function paperClick() {
     } else if (result === "rock.jpg") {
         text.textContent = "You win"
     }
-    document.body.appendChild(text)
+    document.body.h2.appendChild(text)
 
 }
 
