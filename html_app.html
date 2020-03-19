@@ -7,18 +7,20 @@
 
 <body>
     <h1>Rock, Paper, Scissors</h1>
+    <div class="droptarget" id="dragtarget">
+        <h2>Drag answer back</h2>
 
-    <img id = "rock" src = "rock.jpg" alt = "rock" >
+        <img draggable="true" id="rock" src="rock.jpg" alt="rock">
 
-    <img id = "paper" src = "paper.jpg" alt = "paper">
+        <img draggable="true" id="paper" src="paper.jpg" alt="paper">
 
-    <img id = "scissors" src = "scissors.jpg" alt = "scissors">
+        <img draggable="true" id="scissors" src="scissors.jpg" alt="scissors">
 
-    <h2 id = "result"></h2>
+        <h2 id="result"></h2>
+    </div>
 
-    <div></div>
-
-    <script src = "app.js"></script>
-</body>
-
-</html>
+    <div class="droptarget">
+        <h2>Drag Here!</h2>
+    </div>
+    <script src="app.js"></script>
+</body></html>

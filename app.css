@@ -1,27 +1,36 @@
-body {
-    background-color: black;
-}
-
-h1 {
-    text-align: center;
-    background-color: lightgreen;
-    padding: 10px;
-    width: 60%;
-}
-
 img {
-    padding: 15px;
-    background-color: powderblue;
-    width: 15%;
-
+    width: 100px;
+    height: 100px;
+    margin: 20px;
 }
 
-img:hover:not(.active) {
-    background-color: greenyellow;
-}
-
-h2 {
+.droptarget {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 20px;
+    position: relative;
+    float: left;
     text-align: center;
-    padding: 15px;
-    background-color: azure;
+}
+
+h2,
+    {
+    text-align: center;
+}
+
+#created {
+    width: 20%;
+    height: 20%;
+    position: relative;
+    float:
+}
+
+#dragtarget {
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    margin: 20px;
+    text-align: center;
+
 }
