@@ -1,7 +1,7 @@
 var img = document.createElement("IMG");
 var text = document.getElementById("result");
 
-
+//Drag event
 document.addEventListener("dragstart", (event) => {
     var y = event.target.id
     event.dataTransfer.setData("text", y);
@@ -21,14 +21,19 @@ document.addEventListener("drop", (event) => {
     var y = event.target.id;
 
     if (event.target.className === "droptarget" && y === "scissors") {
-       scissorsClick();
+        scissorsClick();
     } else if (event.target.className === "droptarget" && y === "rock") {
-     rockClick();
+        rockClick();
     } else if (event.target.className === "droptarget" && y === "paper") {
-      paperClick()
+        paperClick()
     }
 });
 
+
+
+
+
+//functions
 
 //var scissorsPic = document.getElementById("scissors").addEventListener("click", scissorsClick);
 
